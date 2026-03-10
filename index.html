@@ -10,39 +10,52 @@
 	<body>
 		<header>
 			<nav>
-				<div>
+				<div class="nav-1">
 					<img src="./assets/Logo  - Mark.svg" alt="logo" />
-					<img src="./assets/Title Container.svg" alt="title" />
+					<img
+						class="img-none"
+						src="./assets/Title Container.svg"
+						alt="title"
+					/>
 				</div>
-				<div>
+				<div class="best-wmp">
 					<img src="./assets/Trophy Icon.svg" alt="" />
-					<p><span>Best:</span> 0 WPM</p>
+					<p class="text-preset3-mobile text4 col">
+						<span><span class="none">Personal</span> Best : </span> 0 WPM
+					</p>
 				</div>
 			</nav>
 		</header>
 		<main>
 			<section>
-				<div>
-					<div>
-						<h2>WPM:</h2>
-						<p>0</p>
+				<div class="typingstats">
+					<div class="stats">
+						<h2 class="text-preset3-mobile">WPM:</h2>
+						<p class="text-preset4 w">0</p>
 					</div>
-					<hr />
-					<div>
-						<h2>Accuracy:</h2>
-						<p>100%</p>
+					<hr class="hr1" />
+					<div class="stats">
+						<h2 class="text-preset3-mobile">Accuracy:</h2>
+						<p class="text-preset4 w">100%</p>
 					</div>
-					<hr />
-					<div>
-						<h2>Time:</h2>
-						<p>0:60</p>
+					<hr class="hr1" />
+					<div class="stats">
+						<h2 class="text-preset3-mobile">Time:</h2>
+						<p class="text-preset4 w">0:60</p>
 					</div>
 				</div>
-				<div>
-					<h3>Difficulty:</h3>
-					<p>Easy</p>
-					<p>Medium</p>
-					<p>Hard</p>
+				<div class="sctdifficulty">
+					<h3 class="text-preset5">Difficulty:</h3>
+					<form class="lv-difficulty">
+						<input type="radio" id="easy" name="difficulty" />
+						<label class="text-preset5" for="easy">Easy</label>
+
+						<input type="radio" id="medium" name="difficulty" />
+						<label class="text-preset5" for="medium">Medium</label>
+
+						<input type="radio" id="hard" name="difficulty" />
+						<label class="text-preset5" for="hard">Hard</label>
+					</form>
 				</div>
 			</section>
 			<hr />
