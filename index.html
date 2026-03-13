@@ -27,20 +27,20 @@
 			</nav>
 		</header>
 		<main>
-			<section>
+			<section class="main1">
 				<div class="typingstats">
 					<div class="stats">
-						<h2 class="text-preset3-mobile">WPM:</h2>
+						<h2 class="text-preset3-mobile text">WPM:</h2>
 						<p class="text-preset4 w">0</p>
 					</div>
 					<hr class="hr1" />
 					<div class="stats">
-						<h2 class="text-preset3-mobile">Accuracy:</h2>
+						<h2 class="text-preset3-mobile text">Accuracy:</h2>
 						<p class="text-preset4 w">100%</p>
 					</div>
 					<hr class="hr1" />
 					<div class="stats">
-						<h2 class="text-preset3-mobile">Time:</h2>
+						<h2 class="text-preset3-mobile text">Time:</h2>
 						<p class="text-preset4 w">0:60</p>
 					</div>
 				</div>
@@ -48,25 +48,45 @@
 					<h3 class="text-preset5">Difficulty:</h3>
 					<form class="lv-difficulty">
 						<input type="radio" id="easy" name="difficulty" />
-						<label class="text-preset5" for="easy">Easy</label>
+						<label id="btn-easy" class="text-preset5" for="easy">Easy</label>
 
 						<input type="radio" id="medium" name="difficulty" />
-						<label class="text-preset5" for="medium">Medium</label>
+						<label id="btn-medium" class="text-preset5" for="medium"
+							>Medium</label
+						>
 
 						<input type="radio" id="hard" name="difficulty" />
-						<label class="text-preset5" for="hard">Hard</label>
+						<label id="btn-hard" class="text-preset5" for="hard">Hard</label>
 					</form>
 				</div>
 			</section>
-			<hr />
-			<section></section>
-			<hr />
+			<hr class="hr2" />
 			<section>
-				<button>
-					Restart Test
-					<img src="./assets/Undo Icon.svg" alt="restart" />
-				</button>
+				<dialog id="dialog" open>
+					<article id="article">
+						<button id="btnarticle" class="text-preset3-semibold start">
+							Start Typing Test
+						</button>
+						<p class="text-preset3-semibold start-p">
+							Or click the text and start typing
+						</p>
+					</article>
+				</dialog>
+				<div
+					id="relativetext"
+					class="relative text-preset1-regular-mobile tablette"
+				>
+					<div class="absolute text-preset1-regular-mobile tablette"></div>
+				</div>
+				<hr class="hr2" />
+				<div class="sct-btn-restart">
+					<button class="text-preset3-semibold restart">
+						Restart Test
+						<img src="./assets/Undo Icon.svg" alt="restart" />
+					</button>
+				</div>
 			</section>
 		</main>
+		<script src="main.js"></script>
 	</body>
 </html>
