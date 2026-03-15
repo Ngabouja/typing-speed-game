@@ -8,6 +8,16 @@
 		<title>typing-speed-game</title>
 	</head>
 	<body>
+		<dialog id="dialog" open>
+			<article id="article">
+				<button id="btnarticle" class="text-preset3-semibold start">
+					Start Typing Test
+				</button>
+				<p class="text-preset3-semibold start-p">
+					Or click the text and start typing
+				</p>
+			</article>
+		</dialog>
 		<header>
 			<nav>
 				<div class="nav-1">
@@ -21,7 +31,8 @@
 				<div class="best-wmp">
 					<img src="./assets/Trophy Icon.svg" alt="" />
 					<p class="text-preset3-mobile text4 col">
-						<span><span class="none">Personal</span> Best : </span> 0 WPM
+						<span><span class="none">Personal</span> Best : </span>
+						<span id="best-wpm">0</span> WPM
 					</p>
 				</div>
 			</nav>
@@ -31,17 +42,17 @@
 				<div class="typingstats">
 					<div class="stats">
 						<h2 class="text-preset3-mobile text">WPM:</h2>
-						<p class="text-preset4 w">0</p>
+						<p class="text-preset4 w"><span id="wpm">0</span></p>
 					</div>
 					<hr class="hr1" />
 					<div class="stats">
 						<h2 class="text-preset3-mobile text">Accuracy:</h2>
-						<p class="text-preset4 w">100%</p>
+						<p class="text-preset4 w" id="accuracy">100%</p>
 					</div>
 					<hr class="hr1" />
 					<div class="stats">
 						<h2 class="text-preset3-mobile text">Time:</h2>
-						<p class="text-preset4 w">0:60</p>
+						<p class="text-preset4 w" id="time">0:60</p>
 					</div>
 				</div>
 				<div class="sctdifficulty">
@@ -61,29 +72,20 @@
 				</div>
 			</section>
 			<hr class="hr2" />
-			<section>
-				<dialog id="dialog" open>
-					<article id="article">
-						<button id="btnarticle" class="text-preset3-semibold start">
-							Start Typing Test
-						</button>
-						<p class="text-preset3-semibold start-p">
-							Or click the text and start typing
-						</p>
-					</article>
-				</dialog>
+			<section class="words">
+				<div class="absolute text-preset1-regular-mobile tablette"></div>
 				<div
 					id="relativetext"
-					class="relative text-preset1-regular-mobile tablette"
-				>
-					<div class="absolute text-preset1-regular-mobile tablette"></div>
-				</div>
-				<hr class="hr2" />
-				<div class="sct-btn-restart">
-					<button class="text-preset3-semibold restart">
-						Restart Test
-						<img src="./assets/Undo Icon.svg" alt="restart" />
-					</button>
+					class="relative hidden text-preset1-regular-mobile tablette"
+				></div>
+				<div class="restart-container">
+					<hr class="hr2" />
+					<div class="sct-btn-restart">
+						<button id="restart" class="text-preset3-semibold restart">
+							Restart Test
+							<img src="./assets/Undo Icon.svg" alt="restart" />
+						</button>
+					</div>
 				</div>
 			</section>
 		</main>
